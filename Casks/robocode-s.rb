@@ -3,16 +3,16 @@
 # Homebrew cask template for robocode-s: `release.sh cask VERSION`
 # fills in the version and the checksums of target/release-dist/VERSION/SHA256SUMS. It
 # belongs in a tap of its own (a repository homebrew-robocode-s with Casks/robocode-s.rb), after
-# the GitHub release v0.1.0 exists: `brew install --cask nhofsted/robocode-s/robocode-s`.
+# the GitHub release v0.2.0 exists: `brew install --cask nhofsted/robocode-s/robocode-s`.
 cask "robocode-s" do
-  version "0.1.0"
+  version "0.2.0"
 
   on_arm do
-    sha256 "a561fd2ca3996d7b7802ce2479127ad186352a49814b3de71a593f7b6ea93f80"
+    sha256 "6d1e8338d9373a54c6805b02bceb1bd7e265b370235bf89c0b037ca1c3025422"
     url "https://github.com/nhofsted/robocode-s/releases/download/v#{version}/robocode-s-#{version}-macos-aarch64.app.zip"
   end
   on_intel do
-    sha256 "57fa6aed7d1a46ee01d0ceed0cc43b89b2e91d0cf99cf6fbb4338fb2d50621f9"
+    sha256 "d9fa07e651afc50facf2c10a8d44c3c26e60d2c1bdd95cc9e6796ff02f4856ba"
     url "https://github.com/nhofsted/robocode-s/releases/download/v#{version}/robocode-s-#{version}-macos-x86_64.app.zip"
   end
 
